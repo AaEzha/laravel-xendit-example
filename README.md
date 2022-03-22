@@ -1,63 +1,44 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Tentang Projek
 
-## About Laravel
+Ini adalah sebuah contoh projek Laravel sederhana dengan integrasi Xendit sebagai _payment gateway_-nya. Fitur yang dipakai hanya sebatas **pembuatan invoice** dan **callback invoice**. Kedua fitur tersebut bisa dipakai sebagai syarat minimum aktivasi akun Xendit menjadi Live dan menerima transaksi sungguhan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Instalasi Projek
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Projek ini merupakan kerangka projek, jadi harus dijalankan sebagai program utama dan tidak disarankan untuk digabungkan ke dalam projek yang sudah berjalan sebelumnya.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Cara instalasinya, sebagai berikut:
 
-## Learning Laravel
+- Buka *Terminal* favorit Anda.
+- *Clone* projek ini : `git clone https://github.com/AaEzha/laravel-xendit-example.git`
+- Masuk ke dalam folder : `cd laravel-xendit-example`
+- Lakukan instalasi *dependency* : `composer install`
+- Salin atau *rename* file **.env.example** menjadi **.env** : `cp .env.example .env`
+- Atur informasi database, seperti **DB_DATABASE**, **DB_USERNAME**, dan **DB_PASSWORD**.
+- Lalu jalankan migrasi data : `php artisan migrate --seed`
+- Projek siap dijalankan : `php artisan serve`
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Projek ini dibuat sesederhana mungkin tanpa banyak aksi yang diperlukan. Jadi, sila kreasikan sendiri aplikasi Anda.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Integrasi Xendit
 
-## Laravel Sponsors
+Sila buat akun Xendit Anda melalui [Xendit](https://xendit.co), kemudian arahkan ke menu *Settings* - *Callbacks*. Lalu *generate* Secret Key dan salin Public Key dan pasangkan di file `.env`.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```
+XENDIT_SECRET_API_KEY=
+XENDIT_PUBLIC_API_KEY=
+XENDIT_TOKEN=
+XENDIT_CALLBACK_VERIFICATION_TOKEN=
+```
 
-### Premium Partners
+## Jadi Sponsor
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Jika Anda merasa terbantu dengan projek sederhana ini, bisa berkontribusi dalam pengembangan projek ini atau dengan menyalurkan sebagian rezekinya untuk saya dan keluarga melalui [Saweria](https://saweria.co/rezanurfachmi).
 
-## Contributing
+## Celah Keamanan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Laravel Jika Anda menemukan sebuah celah keamanan pada projek ini, tolong kirim email ke saya, Reza Nurfachmi melalui [reza@nurfachmi.com](mailto:reza@nurfachmi.com). Seluruh laporan, insyaallah akan kami telusuri dengan baik.
 
 ## License
 

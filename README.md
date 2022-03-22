@@ -38,7 +38,7 @@ Jika Anda merasa terbantu dengan projek sederhana ini, bisa berkontribusi dalam 
 
 ## Celah Keamanan
 
-If you discover a security vulnerability within Laravel Jika Anda menemukan sebuah celah keamanan pada projek ini, tolong kirim email ke saya, Reza Nurfachmi melalui [reza@nurfachmi.com](mailto:reza@nurfachmi.com). Seluruh laporan, insyaallah akan kami telusuri dengan baik.
+Jika Anda menemukan sebuah celah keamanan pada projek ini, tolong kirim email ke saya, Reza Nurfachmi melalui [reza@nurfachmi.com](mailto:reza@nurfachmi.com). Seluruh laporan, insyaallah akan kami telusuri dengan baik.
 
 ## License
 

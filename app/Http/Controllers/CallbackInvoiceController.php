@@ -26,6 +26,7 @@ class CallbackInvoiceController extends Controller
         Cart::updateOrCreate(
             [
                 'order_id' => $json->external_id,
+                'amount' => $json->amount,
             ],
             [
                 'invoice_id' => $json->id,

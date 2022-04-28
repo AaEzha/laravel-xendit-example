@@ -32,6 +32,10 @@ XENDIT_TOKEN=
 XENDIT_CALLBACK_VERIFICATION_TOKEN=
 ```
 
+## Live Preview
+
+[xendit.elx.web.id](https://xendit.elx.web.id)
+
 ## Jadi Sponsor
 
 Jika Anda merasa terbantu dengan projek sederhana ini, bisa berkontribusi dalam pengembangan projek ini atau dengan menyalurkan sebagian rezekinya untuk saya dan keluarga melalui [Saweria](https://saweria.co/rezanurfachmi).

@@ -38,17 +38,6 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-                        @auth
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('instagram.index') }}">{{ __('Instagram') }}</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('twitter.index') }}">{{ __('Twitter') }}</a>
-                            </li>
-                        @endauth
-                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
@@ -73,13 +62,6 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('biodata.index') }}">
-                                        {{ __('Biodata') }}
-                                    </a>
-
-                                    <a class="dropdown-item" href="{{ route('update-password.index') }}">
-                                        {{ __('Update Password') }}
-                                    </a>
 
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
